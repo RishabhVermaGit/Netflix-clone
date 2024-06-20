@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+:root{
+    --netflix-red: #e50914;
+    --netflix-font: "Martel Sans", sans-serif;
+}
+
+.main{
+    height: 100vh;
+    background-image: url(data/images/background.jpg);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.box{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.473));
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    max-width: 75vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img{
+    width: 144px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+nav button, .lang{
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.lang{
+    width: 120px;
+    padding: 3px 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+nav > div{
+    display: flex;
+}
+
+nav button:nth-child(2){
+    padding: 5px 10px;
+}
+
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 25vh;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.hero *{
+    font-family: var(--netflix-font);
+}
+
+.box-mainhead{
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+}
+
+.box-sechead{
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+}
+
+.box-terhead{
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero-box{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-box *{
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.email{
+    width: 40vw;
+    font-size: 16px;
+    padding: 0px 10px;
+    color: white;
+    background-color: rgba(34, 33, 33, 0.466);
+    border: 1px solid grey;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.hero-box button{
+    font-size: 20px;
+    width: 190px;
+}
+
+.red-btn{
+    color: white;
+    background-color: var(--netflix-red);
+    cursor: pointer;
+}
+
+.btn{
+    border: none;
+    border-radius: 4px;
+}
+
+hr{
+    height: 10px;
+    background-color: rgb(53, 51, 51);
+    border: none;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    padding: 30px 0px;
+    padding-bottom: 60px;
+    gap: 20px;
+    min-height: 50vh;
+    /* flex-wrap: wrap; */
+}
+
+.secImage{
+    position: relative;
+    z-index: 1;
+}
+
+.secImage > img{
+    width: 35vw;
+    position: relative;
+    z-index: 1;
+}
+
+.secImage .video1{
+    position: absolute;
+    top: 18%;
+    left: 14%;
+    z-index: 0;
+    width: 75%;
+}
+
+.video2{
+    position: absolute;
+    top: 11%;
+    left: 17%;
+    z-index: 0;
+    width: 65%;
+}
+
+.secText1{
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.secText2{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.flex-row-rev{
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+
+.img2down{
+    width: 60%;
+    border: 2px solid grey;
+    margin: auto;
+    height: 80px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.img2down img:first-child{
+    height: 100%;
+    width: 20%;
+}
+
+.faqs h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    color: white;
+}
+
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    font-size: 23px;
+    height: 80px;
+    width: 70vw;
+    background-color: #2d2d2d;
+}
+
+.open{
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.membership{
+    margin-top: 40px;
+}
+
+.membership h2{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.membership .hero-box{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+footer{
+    color: #aeaeae;
+    padding: 10vh 12vw;
+}
+
+footer h1{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.number, .griditems{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.griditems{
+    font-size: 15px;
+}
+
+.gridbox{
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+footer button{
+    margin-top: 20px;
+}
+
+.copyright{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.langsvg{
+    width: 15px;
+}
+
+.downsvg{
+    width: 8px;
+}
+
+.leftarrow{
+    font-size: 25px;
+}
+
+.imgText{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.text1{
+    font-size: 16px;
+    line-height: 13px;
+}
+.text2{
+    font-size: 14px;
+    color: #0062cd;
+}
+
+.download
+{
+    position: absolute;
+    width: 17%;
+    right: 0%;
+}
+
+@media only screen and (max-width:1279px){
+    nav, .first{
+        max-width: 95vw;
+    }
+    .faq{
+        width: 90vw;
+    }
+    .secImage > img{
+        width: 45vw;
+    }
+    footer{
+        padding: 10vh 3vw;
+    }
+}
+
+@media only screen and (max-width:959px){
+    .main, .box{
+        height: 65vh;
+    }
+    .hero{
+        padding-top: 12vh;
+    }
+    nav img{
+        width: 90px;
+    }
+    nav{
+        height: 80px;
+        max-width: 92vw;
+    }
+    .box-mainhead{
+        font-size: 30px;
+        padding: 0px 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .box-sechead{
+        font-size: 18px;
+        padding-top: 12px;
+    }
+    .box-terhead{
+        font-size: 18px;
+        padding: 0px 55px;
+        text-align: center;
+        line-height: 30px;
+        padding-top: 20px;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .secText{
+        /* margin-top: 50px; */
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+    }
+    .secText1{
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 13px;
+        line-height: 30px;
+    }
+    .secText2{
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .secImage > img{
+        width: 60vw;
+    }
+    .faq{
+        width: 80vw;
+        font-size: 17px;
+        height: 70px;
+    }
+    .faqs h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .open{
+        font-size: 40px;
+    }
+    .membership h2{
+        font-size: 17px;
+        width: 80vw;
+        text-align: center;
+        margin: auto;
+    }
+    .gridbox{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        padding: 3vh 6vw;
+    }
+}
+
+@media only screen and (max-width:599px){
+    .main, .box{
+        height: 75vh;
+    }
+    .eng{
+        display: none;
+    }
+    .lang{
+        width: 60px;
+    }
+    .hero{
+        padding-top: 5vh;
+    }
+    .email{
+        width: 80vw;
+    }
+    .hero-box{
+        gap: 10px;
+    }
+    .hero-box button{
+        font-size: 20px;
+        width: 190px;
+    }
+    .hero-box button{
+        font-size: 15px;
+        width: 150px;
+    }
+    .leftarrow{
+        font-size: 20px;
+    }
+    .box-mainhead{
+        font-size: 28px;
+        line-height: 30px;
+        padding: 0px 30px;
+    }
+    .secImage img{
+        width: 80vw;
+    }
+    .img2down{
+        display: none;
+    }
+    .faq{
+        width: 75vw;
+    }
+}
